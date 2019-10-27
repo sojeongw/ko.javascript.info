@@ -2,17 +2,25 @@
 # Fetch
 
 JavaScript can send network requests to the server and load new information whenever is needed.
+자바스크립트는 서버에 네트워크 요청을 보낼 수 있으며 필요할 때마다 새로운 정보를 불러올 수 있습니다.
 
 For example, we can use a network request to:
+예를 들어 아래와 같은 목적으로 네트워크 요청을 보낼 수 있습니다.
 
 - Submit an order,
 - Load user information,
 - Receive latest updates from the server,
 - ...etc.
+- 명령을 전송할 때
+- 사용자 정보를 불러올 때
+- 서버로부터 최신 내용을 전달받을 때
+- 그밖의 다양한 상황
 
 ...And all of that without reloading the page!
+이 모든 것은 페이지를 다시 불러오지 않아도 가능합니다!
 
 There's an umbrella term "AJAX" (abbreviated <b>A</b>synchronous <b>J</b>avaScript <b>A</b>nd <b>X</b>ML) for network requests from JavaScript. We don't have to use XML though: the term comes from old times, that's why that word is there. You may have heard that term already.
+ AJAX(<b>A</b>synchronous <b>J</b>avaScript <b>A</b>nd <b>X</b>ML의 약자)
 
 There are multiple ways to send a network request and get information from the server.
 

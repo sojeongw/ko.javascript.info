@@ -6,13 +6,19 @@ libs:
 # IndexedDB
 
 IndexedDB is a built-in database, much more powerful than `localStorage`.
+IndexedDB는 `localStorage`보다 훨씬 강력한 내장 데이터베이스입니다.
 
 - Key/value storage: value can be (almost) anything, multiple key types.
 - Supports transactions for reliability.
 - Supports key range queries, indexes.
 - Can store much more data than `localStorage`.
+- 키-값 쌍 저장소: 값은 대부분 어떤 것이든 될 수 있고 여러 개의 키 타입.......?
+- 안정성을 위한 트랜잭션(transactions)을 지원합니다.
+- 키 범위 내에서 쿼리와 인덱를 지원합니다.
+- `localStorage`보다 훨씬 많이 저장할 수 있습니다.
 
 That power is usually excessive for traditional client-server apps. IndexedDB is intended for offline apps, to be combined with ServiceWorkers and other technologies.
+이러한 기능은 기존의 클라이언트-서버 앱을 뛰어넘습니다. IndexedDB는 오프라인 
 
 The native interface to IndexedDB, described in the specification <https://www.w3.org/TR/IndexedDB>, is event-based.
 
