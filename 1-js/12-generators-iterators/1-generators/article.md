@@ -216,15 +216,18 @@ let range = {
   // for..of range는 맨 처음에 이 메서드를 한 번 호출합니다.
   [Symbol.iterator]() {
     // ...it returns the iterator object:
-    // 
+    // ...반복 가능한 객체를 반환합니다.
     // onward, for..of works only with that object, asking it for next values
+    // 계속해서 for..of가 다음 값을 요청하면서 이 객체의 작업을 수행합니다.
     return {
       current: this.from,
       last: this.to,
 
       // next() is called on each iteration by the for..of loop
+      // for..of 반복문으로 next()가 반복적으로 호출됩니다.
       next() {
         // it should return the value as an object {done:.., value :...}
+        // {done:.., value :...} 객체 형태로 값을 반환합니다.
         if (this.current <= this.last) {
           return { done: false, value: this.current++ };
         } else {
@@ -236,10 +239,12 @@ let range = {
 };
 
 // iteration over range returns numbers from range.from to range.to
+// range에 대한 반복문이 range.from에서 range.to까지 숫자를 반환합니다.
 alert([...range]); // 1,2,3,4,5
 ```
 
 We can use a generator function for iteration by providing it as `Symbol.iterator`.
+`Symbol.iterator`로 제너레이터 함수
 
 Here's the same `range`, but much more compact:
 
